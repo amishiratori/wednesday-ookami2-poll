@@ -31,6 +31,7 @@
 				<div class="card col-xs-9 col-sm-9 col-md-3 col-lg-3 col-xl-3 my-4">
 					<img src="<%= mentor.image %>" alt="" class="card-img-top">
 					<p><%= mentor.name %></p>
+					<div class="underline"></div>
 					<% unless request.path_info == '/admin'%>
 						<button class="ookami_button" value="<%= mentor.id %>" data-toggle="modal" data-target="#modal">オオカミだと疑う</button>
 					<% else %>
@@ -46,6 +47,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-lable="Close"><span aria-hidden="true">&times;</span></button>
 					</div>
 					<h2 class="result"></h2>
+					<div class="underline"></div>
 					<img src="./images/wolf.png" alt="">
 					<div class="modal-body text-center message"></div>
 				</div>
@@ -62,10 +64,10 @@
 				})
 				.done(function(result){
 					if (result == 'success'){
-						$('.result').text('Success!');
+						$('.result').text('Success');
 						$('.message').text(`${mentor_name}に投票しました！`)
 					}else{
-						$('.result').text('Failed...');
+						$('.result').text('Failed');
 						$('.message').text(`${mentor_name}に投票するには、少し時間をおいてね`)
 					}
 				})
