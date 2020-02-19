@@ -43,7 +43,7 @@ body{
   text-align: center;
   background: #fff;
   padding: 4vh 3vw;
-  border: 0.05em solid #eecd6a;
+  border: 0.05em solid #e5bd54;
   border-radius: 1rem;
 }
 
@@ -123,7 +123,7 @@ h2{
   }
   .header{
     background-image: url(../images/mainvisual.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .header a {
