@@ -76,6 +76,7 @@ body{
   border: 0.08em solid #eecd6a;
   border-radius: 2rem;
   background: #000000;
+  transition-duration: 1s;
 }
 
 .card button:hover{
@@ -84,6 +85,7 @@ body{
   background: linear-gradient(120deg, #e5bd54, #efaf00, #e0ca82, #efaf00);
   color: #000000;
   border: 0.08em solid #eecd6a;
+  transition-duration: 1.5s;
 }
 
 
